@@ -1,0 +1,32 @@
+/* CARD */
+.customCard {
+    height: 100%;
+    max-width: 350px;
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+    border-radius: 5px;
+    overflow: hidden;
+    outline-width: 0px !important;
+}
+
+.customCard .customCard_image {
+    height: 300px;
+    width: 300px;
+    transition: all 1s linear;
+}
+
+.customCard .customCard_image:hover {
+    transform: scale(1.1);
+}
+
+.customCard .customCard_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.customCard .customCard_name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: cadetblue;
+}
+
+/* END OF CARD*/

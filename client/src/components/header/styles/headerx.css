@@ -1,0 +1,234 @@
+    
+    /* NAV */
+  nav {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      justify-content: space-between;
+      padding: .8rem;
+      line-height: 1.5;
+      background: #24292e;
+      color: #ffffffb3;
+ 
+    }
+  
+  .mobile-menu-btn {
+      display: none;
+  }
+  
+  .nav-left {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+  }
+  
+  .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.1s ease-in-out;
+
+    }
+    .nav-link:hover {
+      opacity: 0.6;
+    }
+  
+    .nav-left__items {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0 1rem;
+    }
+  
+    .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 16.5rem;
+      padding: .2rem 8px;
+      background: transparent;
+      border-radius: 5px;
+      border: 1px solid#444d56;
+    }
+    .search-bar input {
+      width: 90%;
+      height: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 14px;
+      color: #fff;
+    }
+    .search-bar input::placeholder {
+      color: #ffffffb3;
+      font-weight: 400;
+    }
+    .search-bar img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  
+    .nav-items__links {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      margin: 0 1rem;
+      padding: 0;
+    }
+    .nav-items__links li {
+      margin: 0 .5rem;
+      cursor: pointer;
+      font-weight: 700;
+      transition: color 0.1s ease-in-out;
+    }
+    .nav-items__links li:hover {
+      color: #ffffffb3;
+    }
+  
+    .nav-right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-right .MuiSvgIcon-root {
+        font-size: 25px;  
+    }
+
+    .nav-right button {
+        background: transparent;
+        padding: .5rem;
+        border: none;
+        transition: color 0.1s ease-in-out;
+    }
+    .nav-right button a:hover {
+        color: #ffffffb3;
+    }
+  
+    .nav-icons-group {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 0 0.5rem;
+    }
+    .nav-icons-group img {
+        padding-right: .3rem;
+    }
+  
+    .badge {
+        font-weight: 500;
+        line-height: 18px;
+        color: #24292e;
+        padding: 0 6px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 2em;
+        border-width: 1px;
+        font-size: 12px;
+        background: #d1d5da80;
+        margin-left: -4px;
+      }
+  
+      .fa-caret-down {
+        padding-left: 3px;
+      }
+
+      .dropdown {
+        position: relative;
+        font-weight: bold;
+        display: inline-block;
+        color: #ffffff;
+        padding: 1rem;
+      }
+
+      .dropdown-content {
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 3rem;
+        min-width: 12rem;
+        padding: 1rem;
+        z-index: 1;
+        background: #fff;
+        margin: 0;
+        margin-top: 0.4rem;
+        border-radius: 0.3rem;
+        box-shadow: 0 8px 24px rgba(49, 157, 165, 0.2);
+      }
+      .dropdown:hover .dropdown-content {
+        color: #24292e;
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-content a{
+        color: #24292e;
+        transition: opacity 0.1s ease-in-out;
+      }
+      .dropdown:hover .dropdown-content a:hover{
+        opacity: 0.6;
+      }
+
+      /* SIDEBAR */
+
+      .sidebar {
+        display: none;
+    }
+
+
+    .menu {
+      position: fixed;
+      overflow-y: scroll;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      color: white;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      background: #24292e;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      min-width: 280px;
+    }
+
+    .exitbtn > .MuiSvgIcon-root {
+      position: relative;
+      font-size: 4rem;
+      cursor: pointer;
+      float: left;
+    }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.menu::-webkit-scrollbar {
+  display: none;
+}
+      /* END OF SIDEBAR */
+
+    /* MOBILE VIEW */
+    @media screen and (max-width: 952px) {
+  
+      .sidebar.open {
+        display: block;
+    }
+  
+      .nav-left__items {
+        display: none;
+      }
+    
+      .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-right: .5rem;
+      }
+
+      .nav-right {
+          padding: 0;
+      }
+    }
+    /* END OF MOBILE VIEW */
+  /* END OF NAV */

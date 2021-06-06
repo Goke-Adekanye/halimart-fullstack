@@ -1,12 +1,10 @@
 {
-  "name": "amazona",
+  "name": "mart",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build",
-    "dev": "nodemon server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",

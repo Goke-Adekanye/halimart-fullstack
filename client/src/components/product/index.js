@@ -19,7 +19,6 @@ export default function Product({ product, index }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: [0, 1] }}
       transition={{ duration: index / 1 }}
-      drag={true}
       dragElastic={1}
       dragConstraints={{ top: 1, bottom: 1, right: 1, left: 1 }}
     >

@@ -29,7 +29,7 @@ export default function Cart(props) {
   };
 
   return (
-    <div>
+    <section>
       <div className="row top">
         <div className="col-2">
           <h1>Shopping Cart</h1>
@@ -109,6 +109,6 @@ export default function Cart(props) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

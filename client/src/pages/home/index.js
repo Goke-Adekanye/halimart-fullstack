@@ -19,10 +19,10 @@ export default function Home() {
   ) : error ? (
     <MessageBox variant="danger" error={error} />
   ) : (
-    <div className="row center product">
+    <section className="row center product">
       {products.map((product, index) => (
         <Product key={product.product_id} product={product} index={index} />
       ))}
-    </div>
+    </section>
   );
 }

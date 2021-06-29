@@ -2,17 +2,18 @@
 .customCard {
     height: 100%;
     max-width: 350px;
-    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+    /* box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
     border-radius: 5px;
     overflow: hidden;
     outline-width: 0px !important;
 }
 
 .customCard .customCard_image {
-    height: 300px;
-    width: 300px;
+    height: 200px;
     transition: all 1s linear;
 }
+
 
 .customCard .customCard_image:hover {
     transform: scale(1.1);

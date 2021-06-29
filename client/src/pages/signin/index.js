@@ -28,7 +28,7 @@ export default function Signin(props) {
   }, [props.history, redirect, userInfo]);
 
   return (
-    <div className="container">
+    <section className="container">
       <form className="form" onSubmit={submitHandler}>
         <div className="formImage">
           <img className="small" src="/icon.png" alt="icon" />
@@ -70,6 +70,6 @@ export default function Signin(props) {
           <Link to={`/register?redirect=${redirect}`}>Sign up here</Link>
         </span>
       </p>
-    </div>
+    </section>
   );
 }

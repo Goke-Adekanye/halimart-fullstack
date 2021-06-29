@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import "./App.css";
 import { Header } from "./components";
 import {
   Cart,
@@ -11,14 +10,11 @@ import {
   PlaceOrder,
 } from "./pages";
 
-
 function App() {
   return (
     <Router>
-      <div className="grid-container">
-        <header>
-          <Header />
-        </header>
+      <div className="">
+        <Header />
         <main>
           <Route exact path="/" component={Home} />
           <Route path="/product/:id" component={Product} />

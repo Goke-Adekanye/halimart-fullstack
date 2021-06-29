@@ -28,7 +28,7 @@ export default function ProductScreen(props) {
       ) : error ? (
         <MessageBox variant="danger" error={error} />
       ) : (
-        <div>
+        <section>
           <Link to="/">Back to result</Link>
           <div className="row top">
             <Paper className="overview_details">
@@ -113,7 +113,7 @@ export default function ProductScreen(props) {
               </div>
             </Paper>
           </div>
-        </div>
+        </section>
       )}
     </div>
   );

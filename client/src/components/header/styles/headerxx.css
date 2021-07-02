@@ -169,7 +169,7 @@ header {
   }
 
   .nav-right .nav-toggler {
-    margin: 0 15px;
+    margin: 0 10px;
     padding: 0 !important;
     height: 40px;
     width: 40px;
@@ -227,7 +227,9 @@ header {
 
   /* RESPONSIVE  */
 @media (max-width: 901px) {
-    
+    header {
+    padding-right: 0rem !important;
+    }
     .nav-left .search-bar,
     .nav-center {
         display: none;

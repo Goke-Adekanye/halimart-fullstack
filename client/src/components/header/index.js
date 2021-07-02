@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./styles/headerxx.css";
 import MobileNav from "./mobileNav";
 import { signout } from "../../redux/actions/userActions";
-
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 export default function Header() {

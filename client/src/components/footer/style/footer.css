@@ -1,0 +1,136 @@
+footer{
+    background:linear-gradient(#f9f9f9, #fcfcfc, #ffffff);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(black, #ffffff);
+    width: 100%;
+    height: 150%;
+    top: 0;
+    right: 0;
+    opacity: 0.1;
+    border-radius: 100% 0% 0% 0%;
+}
+
+.f-container {
+    max-width: 100%;
+    padding: 3rem;
+}
+
+.f-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px !important;
+    color: white;
+}
+
+.f-column {
+    width: 30%;
+    padding: 1rem 1rem 0;
+    color: black;
+}
+
+.f-columns {
+    width: 30%;
+    padding: 1rem 1rem 0;
+    color: black;
+    z-index: 1;
+
+}
+
+footer .division{
+    display: flex;
+    justify-content: center;
+}
+
+/* footer .footer-about{
+    background-color: red;
+} */
+footer .footer-about::before{
+    position: relative;
+    content:open-quote;
+    width: 100%;
+    height: 10%;
+    font-size: 70px;
+    color: black;
+    top: 50px;
+}
+footer .footer-about::after{
+    position: relative;
+    content:close-quote;
+    width: 100%;
+    height: 100%;
+    font-size: 70px;
+    color: black;
+    left: 90%;
+    bottom: 30px;
+}
+
+.footer-about p {
+    word-wrap: break-word;
+    font-size: 17px;
+    padding: 0 1rem ;
+}
+
+footer h4 {
+    font-size: 24px;
+    color: black;
+    line-height: 120%;
+    padding-top: 5px;
+}
+
+footer .footer-link li:hover :nth-child(1){
+    margin-left: 10px;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+footer .footer-link a{
+    color: black;
+    font-weight: bold;
+    margin-left:5px ;
+    line-height: 200%;
+}
+footer .footer-link .fa{
+    font-size: small;
+    margin-right: 3px;
+}
+footer .footer-link a:hover{
+    color: gray !important;
+    text-decoration: none;
+}
+
+/* RESPONSIVE  */
+@media (max-width: 988px) {
+    .f-column {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .f-column div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+        .f-columns {
+            width: 100%;
+        }
+        .f-columns.division {
+            justify-content: left;
+        }
+        .f-column.division {
+            justify-content: left;
+        }
+
+        footer h4 {
+            font-size: 20px;
+            line-height: 100%;
+            padding-top: 0px !important;
+        }
+    } 

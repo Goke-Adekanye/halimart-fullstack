@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 import {
   Cart,
   Home,
@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/payment" component={PaymentMethod} />
           <Route exact path="/placeorder" component={PlaceOrder} />
         </main>
-        <footer></footer>
+        <Footer />
       </div>
     </Router>
   );

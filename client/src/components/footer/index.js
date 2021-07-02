@@ -8,7 +8,9 @@ export default function Footer() {
         <div className="f-row">
           <div className="f-column division">
             <div>
-              <h4>Our Mission</h4>
+              <h4>
+                Our <span>Mission</span>
+              </h4>
               <div className="footer-about">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -26,27 +28,27 @@ export default function Footer() {
               </h4>
               <ul className="footer-link">
                 <li>
-                  <a href="##">
+                  <a href="/">
                     <i class="fa fa-chevron-right"></i>Pricing
                   </a>
                 </li>
                 <li>
-                  <a href="##">
+                  <a href="/">
                     <i class="fa fa-chevron-right"></i>Products
                   </a>
                 </li>
                 <li>
-                  <a href="##">
+                  <a href="/">
                     <i class="fa fa-chevron-right"></i>Payment
                   </a>
                 </li>
                 <li>
-                  <a href="##">
+                  <a href="/">
                     <i class="fa fa-chevron-right"></i>Profile
                   </a>
                 </li>
                 <li>
-                  <a href="##">
+                  <a href="/">
                     <i class="fa fa-chevron-right"></i>Order History
                   </a>
                 </li>
@@ -58,17 +60,17 @@ export default function Footer() {
               <h4>Help</h4>
               <ul className="footer-link">
                 <li>
-                  <a href="##">
+                  <a href="/">
                     <i class="fa fa-chevron-right"></i>Contact us
                   </a>
                 </li>
                 <li>
-                  <a href="##">
+                  <a href="/">
                     <i class="fa fa-chevron-right"></i>Customer Service
                   </a>
                 </li>
                 <li>
-                  <a href="##">
+                  <a href="/">
                     <i class="fa fa-chevron-right"></i>FAQs
                   </a>
                 </li>

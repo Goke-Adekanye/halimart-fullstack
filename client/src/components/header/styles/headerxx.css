@@ -1,5 +1,4 @@
 header {
-    width: 100%;
     top: 0;
     right: 0;
     left: 0;
@@ -8,7 +7,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
+    background-image: linear-gradient(to bottom right, var(--lightest-grape), var(--light-grape));
+    background-attachment: fixed;
     box-shadow: 0 2px 30px rgb(66 66 66 / 10%);
     z-index: 1030;
 
@@ -49,13 +49,14 @@ header {
     width: 90%;
     height: 100%;
     font-size: 12px;
+    color: var(--deep-text-grape);
     border: none;
     outline: none;
     background: transparent;
     
 }
 .nav-left input::placeholder {
-    color: black;
+    color: var(--deep-text-grape);
     font-weight: 500;
 }
 
@@ -64,7 +65,110 @@ header {
     width: 1.5rem;
 }
 
-.nav-right .nav-toggler {
+/* NAV-CENTER  */
+.nav-center .navbar-nav {
+    margin: auto;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 .5rem !important;
+}
+.navbar-nav .nav-item a{
+    padding: 0 .5rem !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--deep-text-grape);
+    transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-item a:hover{
+    color: var(--deep-grape);
+}
+
+/* NAV-RIGHT  */
+.nav-right .nav-icon-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: .5rem;
+
+}
+
+.nav-right .MuiSvgIcon-root {
+    font-size: 25px;
+    color: var(--deep-text-grape);
+
+}
+
+.nav-right .badge {
+    background-color: var(--deep-text-grape);
+    color: #ffffff;
+    border-radius: 20%;
+    padding: 0.2rem 0.7rem;
+    font-size: 1.4rem;
+    margin-left: -1px;
+  }
+
+.nav-right button{
+    margin-left: .5rem;
+    color: var(--main-color);
+    background: #ffffff;
+    border: 2px solid var(--deep-text-grape);
+}
+.nav-right button.signin:hover {
+    background-color: var(--deep-text-grape);
+    
+}
+
+.nav-right button a {
+    color: black;
+    font-weight: 500;
+}
+.nav-right button:hover a {
+    color: white;
+}
+
+.fa-caret-down {
+    margin-left: 5px;
+  }
+
+  .dropdown {
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+    color: black;
+    padding: 1rem;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 3rem;
+    min-width: 12rem;
+    padding: 1rem;
+    z-index: 1;
+    background: #fff;
+    margin: 0;
+    margin-top: 0.4rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 8px 24px rgba(49, 157, 165, 0.2);
+  }
+  .dropdown:hover .dropdown-content {
+    color: #24292e;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content a{
+    color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  .dropdown:hover .dropdown-content a:hover{
+    color: turquoise;
+    opacity: 0.6;
+  }
+
+  .nav-right .nav-toggler {
     margin: 0 15px;
     padding: 0 !important;
     height: 40px;
@@ -120,107 +224,6 @@ header {
 .nav-right .nav-toggler:not(.active):hover span::after {
     width: 50%;
 }
-
-/* NAV-CENTER  */
-.nav-center .navbar-nav {
-    margin: auto;
-}
-
-.navbar-nav .nav-item {
-    margin: 0 .5rem !important;
-}
-.navbar-nav .nav-item a{
-    padding: 0 .5rem !important;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: #1d0116 !important;
-    transition: color 0.3s ease-in-out;
-}
-.navbar-nav .nav-item a:hover{
-    color: turquoise !important;
-}
-
-/* NAV-RIGHT  */
-.nav-right .nav-icon-group {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-right: .5rem;
-
-}
-
-.nav-right .MuiSvgIcon-root {
-    font-size: 25px;
-    color: black !important;
-
-}
-
-.nav-right .badge {
-    background-color: black;
-    color: #ffffff;
-    border-radius: 20%;
-    padding: 0.2rem 0.7rem;
-    font-size: 1.4rem;
-    margin-left: -1px;
-  }
-
-.nav-right button{
-    margin-left: .5rem;
-}
-.nav-right button.signin:hover {
-    background-color: black;
-    
-}
-
-.nav-right button a {
-    color: black;
-    font-weight: 500;
-}
-.nav-right button:hover a {
-    color: white;
-}
-
-.fa-caret-down {
-    margin-left: 5px;
-  }
-
-  .dropdown {
-    position: relative;
-    font-weight: bold;
-    display: inline-block;
-    color: black;
-    padding: 1rem;
-  }
-
-  .dropdown-content {
-    position: absolute;
-    display: none;
-    right: 0;
-    top: 3rem;
-    min-width: 12rem;
-    padding: 1rem;
-    z-index: 1;
-    background: #fff;
-    margin: 0;
-    margin-top: 0.4rem;
-    border-radius: 0.3rem;
-    box-shadow: 0 8px 24px rgba(49, 157, 165, 0.2);
-  }
-  .dropdown:hover .dropdown-content {
-    color: #24292e;
-    display: block;
-  }
-
-  .dropdown:hover .dropdown-content a{
-    color: black;
-    transition: all 0.3s ease-in-out;
-  }
-  .dropdown:hover .dropdown-content a:hover{
-    color: turquoise;
-    opacity: 0.6;
-  }
-
 
   /* RESPONSIVE  */
 @media (max-width: 901px) {

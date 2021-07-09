@@ -7,11 +7,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom right, var(--lightest-grape), var(--light-grape));
-    background-attachment: fixed;
-    box-shadow: 0 2px 30px rgb(66 66 66 / 10%);
-    z-index: 1030;
+    background: white;
+    box-shadow: rgb(185 185 185 / 25%) 0px 2px 8px;
+    color: #000000;
+    z-index: 2000;
 
+}
+header.non {
+    box-shadow: none !important;
 }
 
 .nav-left,
@@ -35,13 +38,14 @@ header {
 
 .nav-left .search-bar {
     width: 16.5rem;
-    padding: 1rem 8px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: transparent;
+    border: 1px solid #000000;
     border-radius: .3rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0.2rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.2); */
 
 }
 
@@ -49,14 +53,14 @@ header {
     width: 90%;
     height: 100%;
     font-size: 12px;
-    color: var(--deep-text-grape);
+    color: #000000;
     border: none;
     outline: none;
     background: transparent;
     
 }
 .nav-left input::placeholder {
-    color: var(--deep-text-grape);
+    color: #000000;
     font-weight: 500;
 }
 
@@ -74,15 +78,15 @@ header {
     margin: 0 .5rem !important;
 }
 .navbar-nav .nav-item a{
-    padding: 0 .5rem !important;
-    font-size: 15px;
+    padding-right: 2em;
+    font-size: 14px;
     font-weight: 600;
     text-transform: capitalize;
-    color: var(--deep-text-grape);
+    color: #000000;
     transition: color 0.3s ease-in-out;
 }
 .navbar-nav .nav-item a:hover{
-    color: var(--deep-grape);
+    color: var(--main-color);
 }
 
 /* NAV-RIGHT  */
@@ -96,12 +100,12 @@ header {
 
 .nav-right .MuiSvgIcon-root {
     font-size: 25px;
-    color: var(--deep-text-grape);
+    color: #000000;
 
 }
 
 .nav-right .badge {
-    background-color: var(--deep-text-grape);
+    background-color: #000000;
     color: #ffffff;
     border-radius: 20%;
     padding: 0.2rem 0.7rem;
@@ -111,21 +115,18 @@ header {
 
 .nav-right button{
     margin-left: .5rem;
-    color: var(--main-color);
-    background: #ffffff;
-    border: 2px solid var(--deep-text-grape);
-}
-.nav-right button.signin:hover {
-    background-color: var(--deep-text-grape);
-    
+    font-size: 1em;
+    font-weight: 700;
+    height: 2.625em;
+    border-radius: .25rem;
+    background: var(--main-color);
 }
 
 .nav-right button a {
-    color: black;
-    font-weight: 500;
+    color: var(--primary-color);
 }
 .nav-right button:hover a {
-    color: white;
+    opacity: 0.8;
 }
 
 .fa-caret-down {
@@ -164,19 +165,18 @@ header {
     transition: all 0.3s ease-in-out;
   }
   .dropdown:hover .dropdown-content a:hover{
-    color: turquoise;
     opacity: 0.6;
   }
 
   .nav-right .nav-toggler {
-    margin: 0 10px;
+    margin-right: 10px;
     padding: 0 !important;
     height: 40px;
     width: 40px;
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: none;
     border: none;
     border-radius: 10%;
     cursor: pointer;

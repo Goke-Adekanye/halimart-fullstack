@@ -40,7 +40,7 @@ export default function Header() {
   };
   return (
     <>
-      <header className="navbar-area">
+      <header className={`navbar-area ${isOpen && "non"}`}>
         <div className="nav-left">
           <a href="/" className="nav-brand">
             <img src="/icon.png" alt="icon" />

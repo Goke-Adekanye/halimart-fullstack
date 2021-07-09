@@ -35,6 +35,10 @@ nav.active .nav-inner {
     opacity: 1;
 }
 
+.nav-inner ul {
+    /* background-color: red; */
+    margin-left: -15px;
+}
 .nav-inner ul li{
     text-align: center;
  }

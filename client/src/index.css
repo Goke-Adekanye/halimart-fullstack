@@ -26,7 +26,10 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--bg-grey);
+  /* background-color: var(--bg-grey); */
+  background-image: linear-gradient(
+    180deg
+    ,#f1f9f4,rgba(241,249,244,0));
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

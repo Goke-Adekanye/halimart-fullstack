@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import "./styles/headerxx.css";
 import MobileNav from "./mobileNav";
 import { signout } from "../../redux/actions/userActions";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import ShoppingCart from "@material-ui/icons/ShoppingCart";
+import PersonOutlined from "@material-ui/icons/PersonOutlined";
+import LocalShippingOutlined from "@material-ui/icons/LocalShippingOutlined";
+import KeyboardReturn from "@material-ui/icons/KeyboardReturn";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +74,7 @@ export default function Header() {
         <div className="nav-right">
           <Link to="/cart">
             <div className="nav-icon-group" onClick={handleNavCase}>
-              <ShoppingCartIcon />
+              <ShoppingCart />
               {cartItems.length > 0 && (
                 <span className="badge">{cartItems.length}</span>
               )}
@@ -85,7 +88,7 @@ export default function Header() {
                 <i className="fa fa-caret-down" />
 
                 <ul className="dropdown-content">
-                  <li>
+                  {/* <li>
                     <Link to="/profile">User Profile</Link>
                   </li>
                   <li>
@@ -93,6 +96,29 @@ export default function Header() {
                   </li>
                   <li onClick={signoutHandler}>
                     <Link to="/">Sign Out</Link>
+                  </li> */}
+
+                  <li>
+                    <div>
+                      <PersonOutlined />
+                      <h5>Profile</h5>
+                    </div>
+                    <p>{userInfo.name}</p>
+                  </li>
+
+                  <li>
+                    <div>
+                      <LocalShippingOutlined />
+                      <h5>Shipping</h5>
+                    </div>
+                    <p>Address Information</p>
+                  </li>
+
+                  <li>
+                    <div>
+                      <KeyboardReturn />
+                      <h5>Sign Out</h5>
+                    </div>
                   </li>
                 </ul>
               </div>

@@ -83,8 +83,13 @@ export default function Header() {
 
           {userInfo ? (
             <Link to="#">
-              <div className="dropdown">
-                {userInfo.name}
+              <div className={`dropdown ${isOpen && "d-none"}`}>
+                <img
+                  src="./icons/avatar.svg"
+                  alt="small-rounded-user-avatar"
+                  width="30"
+                  height="30"
+                />
                 <i className="fa fa-caret-down" />
 
                 <ul className="dropdown-content">
@@ -99,11 +104,14 @@ export default function Header() {
                   </li> */}
 
                   <li>
-                    <div>
-                      <PersonOutlined />
-                      <h5>Profile</h5>
-                    </div>
-                    <p>{userInfo.name}</p>
+                    <Link to="/profile">
+                      <div>
+                        <PersonOutlined />
+                        <h5>Profile</h5>
+                      </div>
+                      <p>{userInfo.name}</p>
+                    </Link>
+                    <hr />
                   </li>
 
                   <li>
@@ -112,13 +120,16 @@ export default function Header() {
                       <h5>Shipping</h5>
                     </div>
                     <p>Address Information</p>
+                    <hr />
                   </li>
 
-                  <li>
-                    <div>
-                      <KeyboardReturn />
-                      <h5>Sign Out</h5>
-                    </div>
+                  <li onClick={signoutHandler}>
+                    <Link to="/">
+                      <div>
+                        <KeyboardReturn />
+                        <h5>Sign Out</h5>
+                      </div>
+                    </Link>
                   </li>
                 </ul>
               </div>

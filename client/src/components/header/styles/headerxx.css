@@ -7,8 +7,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    /* box-shadow: rgb(185 185 185 / 25%) 0px 2px 8px; */
+    background: #ffffff;
+    box-shadow: rgb(185 185 185 / 25%) 0px 2px 8px;
     color: #000000;
     z-index: 2000;
 
@@ -114,7 +114,7 @@ header.non {
   }
 
 .nav-right button{
-    margin-left: .5rem;
+    /* margin-left: .5rem; */
     font-size: 1em;
     font-weight: 700;
     height: 2.625em;
@@ -129,41 +129,58 @@ header.non {
     opacity: 0.8;
 }
 
-.fa-caret-down {
-    margin-left: 5px;
-  }
+
 
   .dropdown {
     position: relative;
     font-weight: bold;
-    display: inline-block;
+    display: flex;
     color: black;
     padding: 1rem;
   }
+  .dropdown.d-none {
+      display: none;
+  }
+  .dropdown img {
+      border-radius: 50%;
+  }
+  .dropdown .fa-caret-down {
+    margin-top: 5px;
+    margin-left: 3px;
+  }
 
   .dropdown-content {
+    width: 0%;
+    min-width: 0px;
+    visibility: hidden;
     position: absolute;
-    display: none;
     right: 0;
     top: 3rem;
-    min-width: 200px;
     z-index: 1;
     background: #fff;
     margin: 0;
-    margin-top: 0.4rem;
+    margin-top: 1.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-    /* box-shadow: 0 8px 24px rgba(49, 157, 165, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: min-width 0.3s ease;
   }
   .dropdown:hover .dropdown-content {
     color: #000000;
-    display: block;
+    min-width: 200px;
+    visibility: visible;
+  }
+  .dropdown:hover .dropdown-content a{
+    color: #000000 !important;
   }
 
+  .dropdown:hover ul li {
+      opacity: 1;
+  }
   .dropdown ul li {
+    opacity: 0;
     padding: 0 10px;
     margin-top: 0px !important;
-    /* align-items: center; */
+    transition: opacity 0.1s ease;
   }
   .dropdown ul li:hover {
       background-color: whitesmoke;
@@ -189,6 +206,12 @@ header.non {
       color: var(--dark-grey);
   }
 
+  .dropdown ul li hr {
+      padding: 0;
+      margin: 0;
+      border: none;
+      border-bottom: 1px solid whitesmoke !important;
+  }
 
   /* .dropdown:hover .dropdown-content a{
     color: black;
@@ -214,7 +237,7 @@ header.non {
     transition: opacity 0.5s ease-in-out;
 }
 .nav-right .nav-toggler span {
-    height: 2px;
+    height: 1px;
     width: 24px;
     position: relative;
     background-color: black;
@@ -271,10 +294,6 @@ header.non {
 }
 
 @media (max-width: 767px) {
-    .dropdown {
-        display: none;
-    }
-
     .nav-left .nav-brand img{
         height: 45px;
     }

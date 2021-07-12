@@ -43,8 +43,8 @@ header.non {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    border: 1px solid #000000;
-    border-radius: .3rem;
+    border: 1px solid #cfd4db;
+    border-radius: 2rem;
     /* box-shadow: 0.2rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.2); */
 
 }

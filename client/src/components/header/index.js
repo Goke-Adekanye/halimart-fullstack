@@ -11,6 +11,7 @@ import KeyboardReturn from "@material-ui/icons/KeyboardReturn";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
@@ -49,7 +50,12 @@ export default function Header() {
             <img src="/icon.png" alt="icon" />
           </a>
           <div className="search-bar">
-            <input type="text" placeholder="Search product .." />
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={({ target }) => setSearchTerm(target.value)}
+              placeholder="Search product .."
+            />
             <img src="./icons/input-icon.svg" alt="input" />
           </div>
         </div>

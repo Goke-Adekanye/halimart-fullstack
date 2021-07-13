@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <>
-      <Header filter={filter} setFilter={setFilter} />
+      <Header filter={filter} setFilter={setFilter} show />
 
       {loading ? (
         <LoadingBox />

@@ -39,7 +39,7 @@ header.non {
 .nav-left .search-bar {
     width: 16.5rem;
     padding: 5px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     background: transparent;
@@ -47,6 +47,9 @@ header.non {
     border-radius: 2rem;
     /* box-shadow: 0.2rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.2); */
 
+}
+.nav-left .search-bar.show {
+    display: flex;
 }
 
 .nav-left input {

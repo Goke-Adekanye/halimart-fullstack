@@ -9,7 +9,7 @@ import PersonOutlined from "@material-ui/icons/PersonOutlined";
 import LocalShippingOutlined from "@material-ui/icons/LocalShippingOutlined";
 import KeyboardReturn from "@material-ui/icons/KeyboardReturn";
 
-export default function Header({ filter, setFilter }) {
+export default function Header({ filter, setFilter, show }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const dispatch = useDispatch();
@@ -48,7 +48,7 @@ export default function Header({ filter, setFilter }) {
           <a href="/" className="nav-brand">
             <img src="/icon.png" alt="icon" />
           </a>
-          <div className="search-bar">
+          <div className={`search-bar ${show && "show"}`}>
             <input
               type="text"
               value={filter}

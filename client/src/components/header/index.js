@@ -91,7 +91,7 @@ export default function Header({ filter, setFilter }) {
               <div className={`dropdown ${isOpen && "d-none"}`}>
                 <img
                   src="./icons/avatar.svg"
-                  alt="small-rounded-user-avatar"
+                  alt="avatar"
                   width="30"
                   height="30"
                 />

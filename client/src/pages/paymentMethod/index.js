@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { CheckOutSteps } from "../../components";
+import { CheckOutSteps, Header } from "../../components";
 import { savePaymentMethod } from "../../redux/actions/cartActions";
 import "./styles/paymentMethod.css";
 
@@ -18,45 +18,49 @@ export default function PaymentMethod(props) {
     props.history.push("/placeorder");
   };
   return (
-    <div>
-      <CheckOutSteps step1 step2 step3 />
-      <form className="form" onSubmit={submitHandler}>
-        <div>
-          <h1>Payment Method</h1>
-        </div>
+    <>
+      <Header />
 
-        <div className="payment">
-          <input
-            type="radio"
-            id="paypal"
-            value="PayPal"
-            name="paymentMethod"
-            required
-            checked
-            onChange={(e) => setPaymentMethod(e.target.value)}
-          />
-          <label htmlFor="paypal">PayPal</label>
-        </div>
+      <div>
+        <CheckOutSteps step1 step2 step3 />
+        <form className="form" onSubmit={submitHandler}>
+          <div>
+            <h1>Payment Method</h1>
+          </div>
 
-        <div className="payment">
-          <input
-            type="radio"
-            id="stripe"
-            value="Stripe"
-            name="paymentMethod"
-            required
-            onChange={(e) => setPaymentMethod(e.target.value)}
-          />
-          <label htmlFor="stripe">Stripe</label>
-        </div>
+          <div className="payment">
+            <input
+              type="radio"
+              id="paypal"
+              value="PayPal"
+              name="paymentMethod"
+              required
+              checked
+              onChange={(e) => setPaymentMethod(e.target.value)}
+            />
+            <label htmlFor="paypal">PayPal</label>
+          </div>
 
-        <div>
-          <label />
-          <button className="primary" type="submit">
-            Continue
-          </button>
-        </div>
-      </form>
-    </div>
+          <div className="payment">
+            <input
+              type="radio"
+              id="stripe"
+              value="Stripe"
+              name="paymentMethod"
+              required
+              onChange={(e) => setPaymentMethod(e.target.value)}
+            />
+            <label htmlFor="stripe">Stripe</label>
+          </div>
+
+          <div>
+            <label />
+            <button className="primary" type="submit">
+              Continue
+            </button>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }

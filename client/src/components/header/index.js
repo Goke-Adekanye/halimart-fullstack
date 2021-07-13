@@ -9,9 +9,8 @@ import PersonOutlined from "@material-ui/icons/PersonOutlined";
 import LocalShippingOutlined from "@material-ui/icons/LocalShippingOutlined";
 import KeyboardReturn from "@material-ui/icons/KeyboardReturn";
 
-export default function Header() {
+export default function Header({ filter, setFilter }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
 
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
@@ -52,8 +51,8 @@ export default function Header() {
           <div className="search-bar">
             <input
               type="text"
-              value={searchTerm}
-              onChange={({ target }) => setSearchTerm(target.value)}
+              value={filter}
+              onChange={({ target }) => setFilter(target.value)}
               placeholder="Search product .."
             />
             <img src="./icons/input-icon.svg" alt="input" />

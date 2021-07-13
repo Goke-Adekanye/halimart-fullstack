@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Header, Footer } from "./components";
+import { Footer } from "./components";
 import {
   Cart,
   Home,
@@ -14,7 +14,6 @@ function App() {
   return (
     <Router>
       <div className="">
-        <Header />
         <main>
           <Route exact path="/" component={Home} />
           <Route path="/product/:id" component={Product} />

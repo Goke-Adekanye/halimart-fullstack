@@ -29,11 +29,14 @@ header.non {
 /* NAV-LEFT  */
 .nav-left .nav-brand {
     margin-right: 1rem;
+    display: flex;
+    align-items: center !important;
     justify-content: center !important;
     
 }
 .nav-left .nav-brand img{
     height: 50px;
+
 }
 
 .nav-left .search-bar {
@@ -99,6 +102,9 @@ header.non {
     align-items: center;
     margin-right: .5rem;
 
+}
+.nav-icon-group.d-none {
+    display: none;
 }
 
 .nav-right .MuiSvgIcon-root {
@@ -286,18 +292,25 @@ header.non {
     header {
     padding-right: 0rem !important;
     }
-    .nav-left .search-bar,
     .nav-center {
         display: none;
     }
 
     .nav-right .nav-toggler {
         display: flex !important;
+        outline: none !important;
     }    
 }
 
 @media (max-width: 767px) {
     .nav-left .nav-brand img{
-        height: 45px;
+        height: 43px;
+    }
+
+    .nav-left .search-bar.show {
+        display: none;
+    }
+    .nav-left .search-bar.show.active {
+        display: flex !important;
     }
 }

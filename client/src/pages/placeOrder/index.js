@@ -51,7 +51,7 @@ export default function PlaceOrder(props) {
   }, [dispatch, order, props.history, success]);
 
   return (
-    <>
+    <div>
       <Header />
 
       <div>
@@ -164,6 +164,6 @@ export default function PlaceOrder(props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

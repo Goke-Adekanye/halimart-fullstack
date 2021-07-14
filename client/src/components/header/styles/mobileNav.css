@@ -42,17 +42,17 @@ nav.active .nav-inner {
 .nav-inner ul li{
     text-align: center;
  }
-.nav-inner ul li a {
+.nav-inner ul a {
     padding: 8px 15px;
     display: block;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 300;
     text-transform: capitalize;
     color: black;
     position: relative;
     transition: color 0.3s ease;
 }
-.nav-inner ul li a:hover {
+.nav-inner ul a:hover {
     color: turquoise;
 }
 

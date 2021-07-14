@@ -27,7 +27,7 @@ export default function ShippingAddress(props) {
     props.history.push("/payment");
   };
   return (
-    <>
+    <React.Fragment>
       <Header />
 
       <div>
@@ -96,6 +96,6 @@ export default function ShippingAddress(props) {
           </form>
         </Paper>
       </div>
-    </>
+    </React.Fragment>
   );
 }

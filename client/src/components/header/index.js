@@ -42,20 +42,24 @@ export default function Header({ filter, setFilter, show }) {
     }
   };
   return (
-    <>
+    <div>
       <header className={`navbar-area ${isOpen && "non"}`}>
         <div className="nav-left">
           <a href="/" className="nav-brand">
             <img src="/icon.png" alt="icon" />
           </a>
-          <div className={`search-bar ${show && "show"}`}>
+          <div
+            className={`search-bar ${
+              show && isOpen ? "show active" : show && "show"
+            }`}
+          >
             <input
               type="text"
               value={filter}
               onChange={({ target }) => setFilter(target.value)}
               placeholder="Search product .."
             />
-            <img src="./icons/input-icon.svg" alt="input" />
+            <img src="/icons/input-icon.svg" alt="input" />
           </div>
         </div>
 
@@ -78,7 +82,10 @@ export default function Header({ filter, setFilter, show }) {
 
         <div className="nav-right">
           <Link to="/cart">
-            <div className="nav-icon-group" onClick={handleNavCase}>
+            <div
+              className={`nav-icon-group ${isOpen && "d-none"}`}
+              onClick={handleNavCase}
+            >
               <ShoppingCart />
               {cartItems.length > 0 && (
                 <span className="badge">{cartItems.length}</span>
@@ -87,10 +94,10 @@ export default function Header({ filter, setFilter, show }) {
           </Link>
 
           {userInfo ? (
-            <Link to="#">
+            <React.Fragment>
               <div className={`dropdown ${isOpen && "d-none"}`}>
                 <img
-                  src="./icons/avatar.svg"
+                  src="/icons/avatar.svg"
                   alt="avatar"
                   width="30"
                   height="30"
@@ -98,16 +105,6 @@ export default function Header({ filter, setFilter, show }) {
                 <i className="fa fa-caret-down" />
 
                 <ul className="dropdown-content">
-                  {/* <li>
-                    <Link to="/profile">User Profile</Link>
-                  </li>
-                  <li>
-                    <Link to="/orderhistory">Order History</Link>
-                  </li>
-                  <li onClick={signoutHandler}>
-                    <Link to="/">Sign Out</Link>
-                  </li> */}
-
                   <li>
                     <Link to="/profile">
                       <div>
@@ -138,7 +135,7 @@ export default function Header({ filter, setFilter, show }) {
                   </li>
                 </ul>
               </div>
-            </Link>
+            </React.Fragment>
           ) : (
             <button className="signin" onClick={handleNavCase}>
               <Link to="/signin">Sign In</Link>
@@ -156,6 +153,6 @@ export default function Header({ filter, setFilter, show }) {
       </header>
 
       <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
-    </>
+    </div>
   );
 }

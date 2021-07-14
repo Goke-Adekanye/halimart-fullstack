@@ -29,27 +29,27 @@ export default function Footer() {
               <ul className="footer-link">
                 <li>
                   <a href="/">
-                    <i class="fa fa-chevron-right"></i>Pricing
+                    <i className="fa fa-chevron-right"></i>Pricing
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <i class="fa fa-chevron-right"></i>Products
+                    <i className="fa fa-chevron-right"></i>Products
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <i class="fa fa-chevron-right"></i>Payment
+                    <i className="fa fa-chevron-right"></i>Payment
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <i class="fa fa-chevron-right"></i>Profile
+                    <i className="fa fa-chevron-right"></i>Profile
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <i class="fa fa-chevron-right"></i>Order History
+                    <i className="fa fa-chevron-right"></i>Order History
                   </a>
                 </li>
               </ul>
@@ -61,17 +61,17 @@ export default function Footer() {
               <ul className="footer-link">
                 <li>
                   <a href="/">
-                    <i class="fa fa-chevron-right"></i>Contact us
+                    <i className="fa fa-chevron-right"></i>Contact us
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <i class="fa fa-chevron-right"></i>Customer Service
+                    <i className="fa fa-chevron-right"></i>Customer Service
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <i class="fa fa-chevron-right"></i>FAQs
+                    <i className="fa fa-chevron-right"></i>FAQs
                   </a>
                 </li>
               </ul>

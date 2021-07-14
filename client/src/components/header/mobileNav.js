@@ -11,35 +11,19 @@ export default function MobileNav({ isOpen, setIsOpen }) {
       <div className="nav-inner">
         <ul>
           <Link to="/">
-            <li onClick={gotoPage}>
-              <a href="##" className="nav-item">
-                home
-              </a>
-            </li>
+            <li onClick={gotoPage}>home</li>
           </Link>
 
           <Link to="/profile">
-            <li onClick={gotoPage}>
-              <a href="##" className="nav-item">
-                history
-              </a>
-            </li>
+            <li onClick={gotoPage}>history</li>
           </Link>
 
           <Link to="/profile">
-            <li onClick={gotoPage}>
-              <a href="##" className="nav-item">
-                profile
-              </a>
-            </li>
+            <li onClick={gotoPage}>profile</li>
           </Link>
 
           <Link to="/cart">
-            <li onClick={gotoPage}>
-              <a href="##" className="nav-item">
-                cart
-              </a>
-            </li>
+            <li onClick={gotoPage}>cart</li>
           </Link>
         </ul>
       </div>

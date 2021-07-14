@@ -28,7 +28,7 @@ export default function Signin(props) {
   }, [props.history, redirect, userInfo]);
 
   return (
-    <>
+    <React.Fragment>
       <Header />
 
       <section className="container">
@@ -74,6 +74,6 @@ export default function Signin(props) {
           </span>
         </p>
       </section>
-    </>
+    </React.Fragment>
   );
 }

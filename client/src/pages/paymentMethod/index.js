@@ -18,7 +18,7 @@ export default function PaymentMethod(props) {
     props.history.push("/placeorder");
   };
   return (
-    <>
+    <div>
       <Header />
 
       <div>
@@ -61,6 +61,6 @@ export default function PaymentMethod(props) {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 }

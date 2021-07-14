@@ -29,9 +29,8 @@ export default function Home() {
   }
 
   return (
-    <>
+    <React.Fragment>
       <Header filter={filter} setFilter={setFilter} show />
-
       {loading ? (
         <LoadingBox />
       ) : error ? (
@@ -39,10 +38,10 @@ export default function Home() {
       ) : (
         <section className="row center product">
           {search(products).map((product, index) => (
-            <Product key={product.product_id} product={product} index={index} />
+            <Product key={product._id} product={product} index={index} />
           ))}
         </section>
       )}
-    </>
+    </React.Fragment>
   );
 }

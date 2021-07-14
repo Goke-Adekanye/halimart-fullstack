@@ -29,7 +29,7 @@ export default function Cart(props) {
   };
 
   return (
-    <>
+    <React.Fragment>
       <Header />
 
       <section>
@@ -44,8 +44,8 @@ export default function Cart(props) {
             ) : (
               <ul>
                 {cartItems.map((item) => (
-                  <Paper className="cart_details">
-                    <li key={item.product}>
+                  <Paper className="cart_details" key={item.product}>
+                    <li>
                       <div className="row">
                         <div>
                           <img
@@ -115,6 +115,6 @@ export default function Cart(props) {
           </div>
         </div>
       </section>
-    </>
+    </React.Fragment>
   );
 }

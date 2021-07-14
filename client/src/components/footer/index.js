@@ -1,4 +1,5 @@
 import React from "react";
+import data from "../data";
 import "./style/footer.css";
 
 export default function Footer() {
@@ -76,6 +77,28 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        <div className="f-rowss">
+          <div className="col-9">
+            developed by{" "}
+            <span>
+              Jvstblvck <i className="fa fa-copyright">2021</i>
+            </span>
+          </div>
+          <div className="col-3">
+            {Object.keys(data.socials).map((key) => (
+              <div className="contactInfo_social">
+                <a
+                  href={data.socials[key].link}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {data.socials[key].icon}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>

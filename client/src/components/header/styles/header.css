@@ -299,7 +299,12 @@ header.non {
     .nav-right .nav-toggler {
         display: flex !important;
         outline: none !important;
-    }    
+    }
+    
+    .nav-right button.signin {
+        display: none;
+    }
+
 }
 
 @media (max-width: 767px) {

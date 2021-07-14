@@ -56,6 +56,13 @@ nav.active .nav-inner {
     color: turquoise;
 }
 
+.nav-inner ul button {
+    display: block;
+    font-weight: bold;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
 /* RESPONSIVE  */
 @media (max-width: 575px) {
     .nav-inner ul li a {

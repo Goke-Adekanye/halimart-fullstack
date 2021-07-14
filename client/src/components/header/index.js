@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import "./styles/headerxx.css";
+import "./styles/header.css";
 import MobileNav from "./mobileNav";
 import { signout } from "../../redux/actions/userActions";
 import ShoppingCart from "@material-ui/icons/ShoppingCart";

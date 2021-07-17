@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Header, Product, MessageBox, LoadingBox } from "../../components";
+import { Header, Product, MessageBox, SkeletonCard } from "../../components";
 import { listProducts } from "../../redux/actions/productActions";
 import "./styles/home.css";
 
@@ -32,7 +32,10 @@ export default function Home() {
     <React.Fragment>
       <Header filter={filter} setFilter={setFilter} show />
       {loading ? (
-        <LoadingBox />
+        <section className="row center product">
+          {" "}
+          <SkeletonCard />{" "}
+        </section>
       ) : error ? (
         <MessageBox variant="danger" error={error} />
       ) : (

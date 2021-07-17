@@ -33,8 +33,7 @@ export default function Home() {
       <Header filter={filter} setFilter={setFilter} show />
       {loading ? (
         <section className="row center product">
-          {" "}
-          <SkeletonCard />{" "}
+          <SkeletonCard />
         </section>
       ) : error ? (
         <MessageBox variant="danger" error={error} />

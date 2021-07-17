@@ -30,7 +30,7 @@ export default function ShippingAddress(props) {
     <React.Fragment>
       <Header />
 
-      <div>
+      <section>
         <CheckOutSteps step1 step2 />
         <Paper className="shipping_details">
           <form className="form" onSubmit={submitHandler}>
@@ -95,7 +95,7 @@ export default function ShippingAddress(props) {
             </div>
           </form>
         </Paper>
-      </div>
+      </section>
     </React.Fragment>
   );
 }

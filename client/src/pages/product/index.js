@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import "./styles/product.css";
-import { Rating, MessageBox, LoadingBox, Header } from "../../components";
+import { Rating, MessageBox, Header, SkeletonPaper } from "../../components";
 import { detailsProduct } from "../../redux/actions/productActions";
 import { Paper } from "@material-ui/core";
 
@@ -26,7 +26,9 @@ export default function ProductScreen(props) {
       <Header />
       <div>
         {loading ? (
-          <LoadingBox />
+          <section>
+            <SkeletonPaper height={700} />
+          </section>
         ) : error ? (
           <MessageBox variant="danger" error={error} />
         ) : (

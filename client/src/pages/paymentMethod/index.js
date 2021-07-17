@@ -21,7 +21,7 @@ export default function PaymentMethod(props) {
     <div>
       <Header />
 
-      <div>
+      <section>
         <CheckOutSteps step1 step2 step3 />
         <form className="form" onSubmit={submitHandler}>
           <div>
@@ -60,7 +60,7 @@ export default function PaymentMethod(props) {
             </button>
           </div>
         </form>
-      </div>
+      </section>
     </div>
   );
 }

@@ -20,7 +20,6 @@ export default function PlaceOrder(props) {
   }
   //CART STATE
   const cart = useSelector((state) => state.cart);
-  console.log({ cart });
   if (!cart.paymentMethod) {
     props.history.push("/payment");
   }
@@ -54,7 +53,7 @@ export default function PlaceOrder(props) {
     <div>
       <Header />
 
-      <div>
+      <section>
         <CheckOutSteps step1 step2 step3 step4 />
         <div className="row top">
           <div className="col-2">
@@ -163,7 +162,7 @@ export default function PlaceOrder(props) {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -2,25 +2,30 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Header, LoadingBox, MessageBox } from "../../components";
-import { signin } from "../../redux/actions/userActions";
+import { register } from "../../redux/actions/userActions";
 
-export default function Signin(props) {
-  const dispatch = useDispatch();
-  const userSignin = useSelector((state) => state.userSignin);
-  const { userInfo, loading, error } = userSignin;
-
+export default function Signup(props) {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const redirect = props.location.search
     ? props.location.search.split("=")[1]
     : "/";
 
+  const userRegister = useSelector((state) => state.userRegister);
+  const { userInfo, loading, error } = userRegister;
+
+  const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(signin(email, password));
+    if (password !== confirmPassword) {
+      alert("Password and confirm password are not match");
+    } else {
+      dispatch(register(name, email, password));
+    }
   };
-
   useEffect(() => {
     if (userInfo) {
       props.history.push(redirect);
@@ -54,6 +59,14 @@ export default function Signin(props) {
             )}
             <form onSubmit={submitHandler}>
               <input
+                aria-label="Enter your full name"
+                type="text"
+                required
+                placeholder="Full name"
+                onChange={({ target }) => setName(target.value)}
+                value={name}
+              />
+              <input
                 aria-label="Enter your email address"
                 type="email"
                 required
@@ -69,6 +82,15 @@ export default function Signin(props) {
                 onChange={({ target }) => setPassword(target.value)}
                 value={password}
               />
+              <input
+                aria-label="Confirm your password"
+                type="password"
+                required
+                placeholder="Confirm Password"
+                onChange={({ target }) => setConfirmPassword(target.value)}
+                value={confirmPassword}
+              />
+
               <button
                 //   disabled={isInvalid}
                 type="submit"
@@ -81,10 +103,8 @@ export default function Signin(props) {
 
           <div className="form-footer">
             <p className="text-sm">
-              Don't have an account?{` `}
-              <Link to={`/register?redirect=${redirect}`}>
-                Create your account
-              </Link>
+              Have an account?{` `}
+              <Link to={`/signin?redirect=${redirect}`}>Login</Link>
             </p>
           </div>
         </div>

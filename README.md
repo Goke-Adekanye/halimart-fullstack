@@ -1,0 +1,1 @@
+An e-commerce based MERN application utilizing technologies like bcrypt, using the authentication method with JWT, react-redux for state management, google material UI for its beautiful user Interface and hosted on the Heroku platform. I publish an article on gokeadekanye.medium.com which explains the step-by-step guide to hosting MERN applications like this one on Heroku.

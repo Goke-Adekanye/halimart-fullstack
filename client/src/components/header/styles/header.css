@@ -128,7 +128,8 @@ header.non {
     font-weight: 700;
     height: 2.625em;
     border-radius: .25rem;
-    background: var(--main-color);
+    background: var(--deep-green);
+    box-shadow: none;
 }
 
 .nav-right button a {

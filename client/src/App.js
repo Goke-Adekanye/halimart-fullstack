@@ -9,6 +9,7 @@ import {
   ShippingAddress,
   PaymentMethod,
   PlaceOrder,
+  Signup,
 } from "./pages";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/product/:id" component={Product} />
           <Route exact path="/cart/:id?" component={Cart} />
           <Route exact path="/signin" component={Signin} />
+          <Route exact path="/register" component={Signup} />
           <Route exact path="/shipping" component={ShippingAddress} />
           <Route exact path="/payment" component={PaymentMethod} />
           <Route exact path="/placeorder" component={PlaceOrder} />

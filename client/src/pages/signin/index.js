@@ -74,7 +74,7 @@ export default function Signin(props) {
                 type="submit"
                 className="submit"
               >
-                Sign Up
+                Login
               </button>
             </form>
           </div>

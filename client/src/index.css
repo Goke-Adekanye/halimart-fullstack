@@ -247,7 +247,7 @@ img.medium {
 /* END OF CARD */
 
 /* FORM */
-/* .form {
+.form {
   max-width: 60rem;
   margin: 0 auto;
   
@@ -281,10 +281,6 @@ width: 100%;
 
 }
 
-.formImage {
-  align-items: center;
-}
-
 h1.title {
   color: black;
   font-size: 3.2rem;
@@ -303,22 +299,6 @@ input {
   border: 0.1rem #a4a4a4 solid;
 }
 
-button.submitBtn {
-  background: var(--deep-green);
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 16px;
-  border: 0;
-  color: white;
-  cursor: pointer;
-}
-
-p.text {
-  color: #737373;
-  font-size: 16px;
-  font-weight: 500;
-} */
 /* END OF FORM */
 
 /* AUTHENTICATION */

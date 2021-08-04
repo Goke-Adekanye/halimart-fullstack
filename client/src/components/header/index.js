@@ -117,11 +117,13 @@ export default function Header({ filter, setFilter, show }) {
                   </li>
 
                   <li>
-                    <div>
-                      <LocalShippingOutlined />
-                      <h5>Shipping</h5>
-                    </div>
-                    <p>Address Information</p>
+                    <Link to="/shipping">
+                      <div>
+                        <LocalShippingOutlined />
+                        <h5>Shipping</h5>
+                      </div>
+                      <p>Address Information</p>
+                    </Link>
                     <hr />
                   </li>
 

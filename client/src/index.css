@@ -403,6 +403,9 @@ button.submit {
 
 /* RESPONSIVE  */
 @media (max-width: 901px) {
+  .auth {
+    height: 60vh;
+  }
   .auth .auth-img {
     display: none;
   }
@@ -421,6 +424,10 @@ button.submit {
 }
 
 @media (max-width: 501px) {
+  .auth-form {
+    width: 90%;
+  }
+
   .form-container input {
     margin-left: 3.5px;
   }

@@ -3,6 +3,24 @@
     margin-top: .5rem;
   
 } */
+.go-back-btn {
+    margin-bottom: 1.25rem;
+}
+.go-back-btn a {
+    border: .0625rem solid var(--main-color);
+    border-radius: .1875rem;
+    color: var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: .5rem;
+}
+.go-back-btn svg {
+    height: .5625rem;
+    margin-right: .6875rem;
+    width: .75rem;
+    vertical-align: middle;
+}
+
 .cart-container {
     margin-bottom: 3rem;
 }
@@ -177,3 +195,41 @@ span.tax {
 .cart-card-button{
     border: none !important;
 }
+
+/* RESPONSIVE  */
+@media (min-width: 770px) {
+    .cart-item {
+        margin: 0 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .cart-item-third {
+        border: none;
+    }
+}
+
+@media (min-width: 995px) {
+    .go-back-btn a {
+        font-size: 1.3rem;
+        line-height: 1.25rem;
+        margin-left: .6875rem;
+    }
+
+    .cart-section {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .cart-container {
+        width: 70%;
+        margin-bottom: 0;
+
+    }
+
+    .cart-card-container {
+        width: 30%;
+        margin-top: 0;
+    }
+}
+/* END OF RESPONSIVE  */

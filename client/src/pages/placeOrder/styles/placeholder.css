@@ -1,0 +1,126 @@
+.placeholder-section {
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-container {
+    margin-right: auto;
+    width: 100%;
+}
+
+.delivery-section {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.delivery-section-title {
+    height: 3.25rem;
+    padding: .625rem;
+    display: flex;
+    align-items: center;
+    border-bottom: .0625rem solid #e8e8e8;
+}
+.delivery-section-title svg {
+    margin-right: .625rem;
+    vertical-align: middle;
+}
+.delivery-section-title h1 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 auto 0 0;
+    padding: 0;
+}
+
+.box-container {
+    padding: .625rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    min-width: 17.5rem;
+    position: relative;
+
+}
+
+.box-1 {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-div1 {
+    display: flex;
+    margin: .625rem;
+    padding: .625rem;
+}
+.box-div1 svg {
+    height: .875rem;
+    margin-right: 2rem;
+    overflow: visible;
+    width: .875rem;
+}
+
+.box-div1 p {
+    margin: 0;
+    font-size: small;
+}
+.box-div1 span{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.box-div2 {
+    display: flex;
+    align-items: center;
+    margin: .625rem;
+    padding: 2rem;
+    background-color: #f2f2f2;
+    border-radius: .1875rem;
+}
+.box-div2 p {
+    color: #4a4a4a;
+    font-size: small;
+    font-weight: 300;
+    line-height: 1.875rem;
+    margin: 0;
+    text-align: left;
+}
+
+.second-container {
+    width: 100%;
+}
+/* RESPONSIVE  */
+
+    @media (min-width: 995px) {
+        .placeholder-section {
+            gap: .5rem;
+        }
+        .first-container {
+            width: 68%;
+    }
+    .second-container {
+        width: 30%;
+    }
+
+    .delivery-container {
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .delivery-section {
+        margin-bottom: 0;
+    }
+}
+/* END OF RESPONSIVE  */

@@ -35,6 +35,7 @@
     border-bottom: .0625rem solid #e8e8e8;
 
 }
+
 .cart-title svg {
     margin-right: .625rem;
 }
@@ -51,6 +52,11 @@
     padding: .625rem;
     background-color: #fff;
     border: .0625rem solid #e8e8e8;
+}
+.cart-item.placeholder {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cart-item-first {
@@ -97,6 +103,10 @@
     display: flex;
     align-items: center;
 }
+.item-price.placeholder {
+    width: 100%;
+    justify-content: center;
+}
 .item-price p {
    margin: 0;
    color: #bbb;
@@ -134,6 +144,9 @@
     margin-top: .9375rem;
     overflow: hidden;
     position: relative;
+}
+.cart-card-container.placeholder {
+    width: 100%;
 }
 
 .cart-card-title {
@@ -226,10 +239,17 @@ span.tax {
         margin-bottom: 0;
 
     }
+    .cart-container.placeholder {
+        width: 100%;
+    }
+    
 
     .cart-card-container {
         width: 30%;
         margin-top: 0;
+    }
+    .cart-card-container.placeholder {
+        width: 100% !important;
     }
 }
 /* END OF RESPONSIVE  */

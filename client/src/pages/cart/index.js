@@ -70,7 +70,7 @@ export default function Cart(props) {
                 fill-rule="nonzero"
               ></path>
             </svg>
-            <h1>Review Cart</h1>
+            <h1>Shopping Cart</h1>
           </div>
 
           {cartItems.length === 0 ? (
@@ -178,7 +178,7 @@ export default function Cart(props) {
               className="primary block"
               disabled={cartItems.length === 0}
             >
-              Proceed to Checkout
+              Proceed to Payment
             </button>
           </div>
         </div>

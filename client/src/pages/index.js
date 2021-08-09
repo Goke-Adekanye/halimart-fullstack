@@ -5,4 +5,4 @@ export { default as Signin } from "./signin";
 export { default as Signup } from "./signup";
 export { default as ShippingAddress } from "./shipping";
 export { default as PaymentMethod } from "./paymentMethod";
-export { default as PlaceOrder } from "./placeOrder";
+export { default as PlaceOrder } from "./placeOrder/index";

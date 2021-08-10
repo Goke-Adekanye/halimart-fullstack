@@ -270,7 +270,7 @@ export default function PlaceOrder(props) {
                 className="primary block"
                 disabled={cart.cartItems.length === 0}
               >
-                Place Order
+                Confirm Order
               </button>
             </div>
 

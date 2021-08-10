@@ -35,7 +35,7 @@ header.non {
     
 }
 .nav-left .nav-brand img{
-    height: 50px;
+    height: 20px;
 
 }
 
@@ -309,9 +309,9 @@ header.non {
 }
 
 @media (max-width: 767px) {
-    .nav-left .nav-brand img{
-        height: 43px;
-    }
+    /* .nav-left .nav-brand img{
+        height: 20px;
+    } */
 
     .nav-left .search-bar.show {
         display: none;

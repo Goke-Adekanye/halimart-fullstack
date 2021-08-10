@@ -39,7 +39,7 @@ export default function Signin(props) {
         <div className="auth-form">
           <div className="form-container">
             <h1>
-              <img src="/icon.png" alt="icom" />
+              <img src="/icon.png" alt="icom" height="22" />
             </h1>
 
             {loading && (

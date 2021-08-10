@@ -274,6 +274,56 @@ export default function PlaceOrder(props) {
               </button>
             </div>
 
+            <div className="cart-card-cc">
+              <span>We accept:</span>
+              <ul>
+                <li>
+                  <picture>
+                    <img
+                      data-expand="100"
+                      data-src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/mastercard.png"
+                      alt="mastercard"
+                      src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/mastercard.png"
+                    />
+                  </picture>
+                </li>
+
+                <li>
+                  <picture>
+                    <img
+                      data-expand="100"
+                      data-src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/visacard.png"
+                      alt="visa"
+                      src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/visacard.png"
+                    />
+                  </picture>
+                </li>
+
+                <li>
+                  <picture>
+                    <img
+                      data-expand="100"
+                      data-src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/vervecard.png"
+                      alt="verve"
+                      src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/vervecard.png"
+                    />
+                  </picture>
+                </li>
+              </ul>
+            </div>
+
+            <div className="cart-card-security">
+              <picture>
+                <img
+                  data-expand="100"
+                  data-src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/secure.png"
+                  alt="Safe and Secure."
+                  src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/secure.png"
+                />
+              </picture>
+              <span> Transactions are 100% Safe and Secure </span>
+            </div>
+
             {loading && (
               <div className="cart-card-button">
                 <LoadingBox />

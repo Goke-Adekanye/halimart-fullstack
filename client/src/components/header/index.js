@@ -99,8 +99,8 @@ export default function Header({ filter, setFilter, show }) {
                 <img
                   src="/icons/avatar.svg"
                   alt="avatar"
-                  width="30"
-                  height="30"
+                  width="27"
+                  height="27"
                 />
                 <i className="fa fa-caret-down" />
 

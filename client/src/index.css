@@ -1,6 +1,6 @@
 /* VARIABLES */
 :root {
-  --main-color: #3ab795;
+  --main-color: #44c69f;
   --light-green: #f1f9f8;
   --light-cyan: #D4EDEA;
   --deep-green: #0c4343;
@@ -165,6 +165,12 @@ button {
 
 button.primary {
   background-color: #f0c040;
+  font-weight: 600;
+}
+button.green {
+  background-color: #33b27b;
+  font-weight: 600;
+
 }
 button.block {
   width: 100%;

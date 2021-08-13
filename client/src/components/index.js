@@ -7,3 +7,4 @@ export { default as SkeletonCard } from "./skeletons/skeletonCard";
 export { default as SkeletonPaper } from "./skeletons/skeletonPaper";
 export { default as Rating } from "./rating";
 export { default as CheckOutSteps } from "./checkOutSteps";
+export { default as Accordion } from "./accordion";

@@ -1,0 +1,71 @@
+.acc-item {
+    margin: auto;
+    width: 100%;
+}
+.acc-item p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.acc-header {
+    padding: 1.25rem .9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: normal;
+    color: #4a4a4a;
+    cursor: pointer;
+    user-select: none;
+}
+.acc-header.active {
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.acc-header .MuiSvgIcon-root {
+    width: 24px;
+    vertical-align: middle;
+    fill: #ccc;
+    user-select: none;
+    transition: all .3s linear;
+}
+@media (max-width: 600px) {
+ .acc-header {
+        font-size: 16px;
+    }
+
+ .acc-header .MuiSvgIcon-root {
+        width: 16px;
+    }
+  }
+
+.acc-body {
+    padding: 0 .9375rem 1.25rem;
+    color: #8f8f8f;
+    font-weight: 400;
+    line-height: normal;
+    white-space: pre-wrap;
+    user-select: none;
+    overflow: hidden;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out forwards;
+    
+}
+.acc-body.open {
+    display: block;
+    border-radius: 0;
+}
+
+.acc-body span {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    .acc-body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+   
+  }

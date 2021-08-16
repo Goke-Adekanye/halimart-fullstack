@@ -6,6 +6,7 @@ import { orderCreateReducer } from "./reducers/orderReducers";
 import {
   productDetailsReducer,
   productListReducer,
+  similarProductReducer,
 } from "./reducers/productReducers";
 import {
   userRegisterReducer,
@@ -40,6 +41,7 @@ const middleware = [thunk];
 const reducers = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
+  similarProductsList: similarProductReducer,
   cart: cartReducer,
   userSignin: userSigninReducer,
   userRegister: userRegisterReducer,

@@ -37,4 +37,17 @@ productRouter.get(
   })
 );
 
+//GET ALL PRODUCTS EXCEPT PRODUCT ID
+productRouter.get(
+  "/smp/:id",
+  expressAsyncHandler(async (req, res) => {
+    const similarProducts = await Product.find({ _id: { $ne: req.params.id } });
+    if (similarProducts) {
+      res.send(similarProducts);
+    } else {
+      res.status(404).send({ message: "No Products" });
+    }
+  })
+);
+
 export default productRouter;

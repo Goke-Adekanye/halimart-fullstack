@@ -6,6 +6,9 @@ import {
   PRODUCT_LIST_FAIL,
   PRODUCT_LIST_REQUEST,
   PRODUCT_LIST_SUCCESS,
+  SIMILAR_PRODUCTS_REQUEST,
+  SIMILAR_PRODUCTS_SUCCESS,
+  SIMILAR_PRODUCTS_FAIL,
 } from "../constants/productConstants";
 
 export const listProducts = () => async (dispatch) => {
@@ -26,6 +29,22 @@ export const detailsProduct = (productId) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: PRODUCT_DETAILS_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    });
+  }
+};
+
+export const similarProducts = (productId) => async (dispatch) => {
+  dispatch({ type: SIMILAR_PRODUCTS_REQUEST, payload: productId });
+  try {
+    const { data } = await axios.get(`/api/products/smp/${productId}`);
+    dispatch({ type: SIMILAR_PRODUCTS_SUCCESS, payload: data });
+  } catch (error) {
+    dispatch({
+      type: SIMILAR_PRODUCTS_FAIL,
       payload:
         error.response && error.response.data.message
           ? error.response.data.message

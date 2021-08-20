@@ -1,3 +1,8 @@
 .product {
-    gap: 1rem;
-}
+    margin: -12px 0 0 -12px;
+    width: calc(100% + 12px);
+  }
+
+.product > * {
+    margin: 12px 0 0 12px;
+  }

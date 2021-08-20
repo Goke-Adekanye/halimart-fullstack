@@ -135,15 +135,15 @@ span.r-text {
 }
 
 .items-container {
+  margin: 0 0 0 -12px;
   padding-bottom: .625rem;
   display: flex;
   font-weight: 400;
   overflow-x: auto;
-  gap: 1rem;
-
 }
-
-
+.items-container > * {
+  margin: 0 0 0 12px;
+}
 
 @media screen and (min-width: 768px) {
 .product-ovv-container {

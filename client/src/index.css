@@ -40,6 +40,7 @@ body {
 }
 
 section {
+  margin: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
 }
 section.fade-out {

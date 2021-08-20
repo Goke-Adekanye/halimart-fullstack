@@ -199,8 +199,8 @@ footer .footer-link a:hover{
             font-size: small;
         }
 
-        .f-rowss {
-            gap: 2rem !important;
+        .f-rowss .col-3 {
+            margin-top: 1.5rem;
         }
         .f-rowss .col-9, 
         .f-rowss .col-3 {

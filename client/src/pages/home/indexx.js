@@ -47,10 +47,17 @@ export default function Home() {
 
             <div className="fsm-product-ctn">
               <div className="fsm-item-list">
-                {search(products).map((product, index) => (
+                {search(products).map((product) => (
                   <div className="fsm-item-ctn">
                     <a href={`/product/${product._id}`} className="fsm-item">
-                      <div className=""></div>
+                      <div className="fsm-image">
+                        <img src={product.image} alt="item" />
+                      </div>
+
+                      <div className="fsm-desc">
+                        <p>{product.name}</p>
+                        <p className="price">${product.price}</p>
+                      </div>
                     </a>
                   </div>
                 ))}

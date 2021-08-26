@@ -64,6 +64,32 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <section className="first-section-desktop">
+            <div className="fsm-header fsd">
+              <h2>Recommended for you</h2>
+              <a href="/">All Items</a>
+            </div>
+
+            <div className="fsd-product-ctn">
+              <div className="fsd-item-list">
+                {search(products).map((product) => (
+                  <div className="fsd-item-ctn">
+                    <a href={`/product/${product._id}`} className="fsd-item">
+                      <div className="fsd-image">
+                        <img src={product.image} alt="item" />
+                      </div>
+
+                      <div className="fsd-desc">
+                        <p>{product.name}</p>
+                        <p className="price">${product.price}</p>
+                      </div>
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
         </section>
       )}
     </React.Fragment>

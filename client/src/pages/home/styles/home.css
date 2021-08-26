@@ -13,6 +13,7 @@
   margin: 0;
 }
 
+/* FIRST SECTION MOBILE  */
 .first-section-mobile {
   margin: -.3125rem auto 0;
 }
@@ -35,6 +36,7 @@
   letter-spacing: .03125rem;
   font-size: 13px;
 }
+
 .fsm-header a {
   color: #8b054d;
     display: inline-block;
@@ -120,4 +122,54 @@
   .first-section-mobile {
     display: none;
   }
+}
+
+/* FIRST SECTION DESKTOP  */
+.fsm-header.fsd h2 {
+  font-size: 17px;
+}
+
+.fsm-header.fsd a {
+  font-size: 15px;
+}
+
+.fsd-product-ctn {
+  padding: .46875rem;
+  background-color: #fff;
+  border-radius: 0 0 .6rem .6rem;
+}
+
+.fsd-item-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.fsd-item-ctn {
+  margin: .46875rem;
+  width: calc(33.33333% - .9375rem);
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem rgb(0 0 0 / 5%);
+
+}
+
+.fsd-item {
+  padding: .9375rem;
+  display: flex;
+  cursor: pointer;
+  transition: box-shadow .4s ease-in-out,-webkit-box-shadow .4s ease-in-out;
+}
+
+.fsd-image {
+  padding-right: .625rem;
+}
+.fsd-image img {
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }

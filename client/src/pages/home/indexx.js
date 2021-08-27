@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Header, MessageBox, SkeletonCard } from "../../components";
+import { Header, MessageBox, Rating, SkeletonPaper } from "../../components";
 import { listProducts } from "../../redux/actions/productActions";
 import "./styles/home.css";
 
@@ -32,8 +32,8 @@ export default function Home() {
     <React.Fragment>
       <Header filter={filter} setFilter={setFilter} show />
       {loading ? (
-        <section className="row center product">
-          <SkeletonCard />
+        <section className="home-section">
+          <SkeletonPaper height={700} />
         </section>
       ) : error ? (
         <MessageBox variant="danger" error={error} />
@@ -67,7 +67,7 @@ export default function Home() {
 
           <section className="first-section-desktop">
             <div className="fsm-header fsd">
-              <h2>Recommended for you</h2>
+              <h2>Today's Deals</h2>
               <a href="/">All Items</a>
             </div>
 
@@ -81,8 +81,12 @@ export default function Home() {
                       </div>
 
                       <div className="fsd-desc">
-                        <p>{product.name}</p>
+                        <p className="name">{product.name}</p>
                         <p className="price">${product.price}</p>
+                        <Rating
+                          rating={product.rating}
+                          numReviews={product.numReviews}
+                        />
                       </div>
                     </a>
                   </div>

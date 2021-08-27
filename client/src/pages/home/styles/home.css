@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  border-radius: .6rem .6rem 0 0;
+  border-radius: .3125rem .3125rem 0 0;
   border-bottom: .0625rem solid #e5e5e5;
 }
 .fsm-header h2 {
@@ -51,7 +51,7 @@
   padding: 0 1rem;
   padding-bottom: .625rem;
   background-color: #fff;
-  border-radius: 0 0 .6rem .6rem;
+  border-radius: 0 0 .3125rem .3125rem;
 }
 
 .fsm-item-list {
@@ -118,7 +118,7 @@
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 999px) {
   .first-section-mobile {
     display: none;
   }
@@ -136,7 +136,7 @@
 .fsd-product-ctn {
   padding: .46875rem;
   background-color: #fff;
-  border-radius: 0 0 .6rem .6rem;
+  border-radius: 0 0 .3125rem .3125rem;
 }
 
 .fsd-item-list {
@@ -149,11 +149,14 @@
 }
 
 .fsd-item-ctn {
-  margin: .46875rem;
-  width: calc(33.33333% - .9375rem);
+  margin: .86875rem;
+  width: calc(33.33333% - 1.8375rem);
   background-color: #fff;
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 5%);
-
+  transition: box-shadow .4s ease-in-out,-webkit-box-shadow .4s ease-in-out;
+}
+.fsd-item-ctn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .fsd-item {
@@ -172,4 +175,77 @@
   object-fit: cover;
   object-position: center;
   overflow: hidden;
+}
+
+.fsd-desc  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fsd-desc p.name {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #bbb;
+}
+
+.fsd-desc p.price {
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+@media (max-width: 999px) {
+  .fsd-item-ctn {
+    width: calc(50% - 1.8375rem);
+  }
+}
+
+@media (max-width: 633px) {
+  .fsd-item-list {
+    justify-content: center;
+  }
+  .fsd-item-ctn {
+    width: calc(90% - 1.8375rem);
+  }
+
+  .fsd-image img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .fsm-header.fsd h2 {
+    font-size: 13px;
+  }
+  
+  .fsm-header.fsd a {
+    font-size: 13px;
+  }
+
+  .fsd-desc p.name {
+    font-size: 1rem;
+  }
+  
+  .fsd-desc p.price {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 501px) {
+
+  .fsd-image img {
+    height: 100px;
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .fsd-item-list {
+    justify-content: center;
+  }
+  .fsd-item-ctn {
+    width: calc(100% - 1.8375rem);
+  }
 }

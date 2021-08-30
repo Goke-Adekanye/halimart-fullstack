@@ -138,6 +138,9 @@
   background-color: #fff;
   border-radius: 0 0 .3125rem .3125rem;
 }
+.fsd-product-ctn.ss {
+      background-color: #f2f2f2;
+}
 
 .fsd-item-list {
   margin: 0;
@@ -155,8 +158,16 @@
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 5%);
   transition: box-shadow .4s ease-in-out,-webkit-box-shadow .4s ease-in-out;
 }
+.fsd-item-ctn.ss {
+  width: calc(33.33333% - 3.7375rem);
+  border-radius: .3125rem;
+  box-shadow: none;
+}
 .fsd-item-ctn:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.fsd-item-ctn.ss:hover {
+  box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 12%), 0 0.125rem 0.25rem 0 rgb(0 0 0 / 8%);
 }
 
 .fsd-item {
@@ -200,6 +211,9 @@
   .fsd-item-ctn {
     width: calc(50% - 1.8375rem);
   }
+  .fsd-item-ctn.ss {
+    width: calc(50% - 3.7375rem);
+  }
 }
 
 @media (max-width: 633px) {
@@ -208,6 +222,9 @@
   }
   .fsd-item-ctn {
     width: calc(90% - 1.8375rem);
+  }
+  .fsd-item-ctn.ss {
+    width: calc(90% - 2.7375rem);
   }
 
   .fsd-image img {
@@ -248,4 +265,100 @@
   .fsd-item-ctn {
     width: calc(100% - 1.8375rem);
   }
+  .fsd-item-ctn.ss {
+    width: calc(100% - 2.7375rem);
+  }
+}
+
+/* SECOND SECTION  */
+.fsm-header.ss {
+  background: #4a4a4a url(https://res.cloudinary.com/staging-konga-com/image/upload/f_auto,q_auto/assets/images/homepage/category_icons.png) no-repeat;
+}
+.fsm-header.ss h2 {
+  font-size: 13px;
+  color: #fff;
+}
+
+.ss-item-list {
+  padding: 0;
+  margin: 0;
+}
+
+.fsd-item-ctn.ss {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  background-color: #fff;
+  height: 28.125rem;
+  max-height: 28.125rem;
+  overflow: hidden;
+  padding: .9375rem;
+}
+
+.ss-image {
+  margin-bottom: .9375rem;
+  overflow: hidden;
+  position: relative;
+  
+}
+.ss-image a {
+  position: absolute;
+  right: 0;
+  top: .125rem;
+}
+.ss-image img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.ss-desc {
+  margin-left: 0;
+  padding:0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ss-desc-name h3 {
+  margin: 0;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.ss-desc-price {
+  line-height: 1.25rem;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  vertical-align: middle;
+  border-bottom: .0625rem solid #f2f2f2;
+  border-top: .0625rem solid #f2f2f2;
+  font-size: 1.25rem;
+}
+.ss-desc-price span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1C1D1F;
+}
+
+.ss-desc-text {
+  margin-top: .3125rem;
+}
+
+span.dtf {
+  margin-right: .3125rem;
+  padding-right: .3125rem;
+  font-size: 1rem;
+  color: #9b9b9b;
+  border-right: .0625rem solid #8f8f8f;
+}
+
+span.dts {
+  margin-right: .3125rem;
+  padding-right: .3125rem;
+  font-size: 1rem;
+  color: #9b9b9b;
 }

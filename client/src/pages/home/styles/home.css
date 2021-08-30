@@ -289,8 +289,7 @@
   -webkit-box-direction: normal;
   flex-direction: column;
   background-color: #fff;
-  height: 28.125rem;
-  max-height: 28.125rem;
+  min-height: 28.125rem;
   overflow: hidden;
   padding: .9375rem;
 }
@@ -316,7 +315,7 @@
 
 .ss-desc {
   margin-left: 0;
-  padding:0 1rem 1rem;
+  padding:0 1rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -361,4 +360,19 @@ span.dts {
   padding-right: .3125rem;
   font-size: 1rem;
   color: #9b9b9b;
+}
+
+.go-back-btn.ss {
+  margin: 1rem 0 0;
+}
+.go-back-btn.ss a {
+  padding: 1rem 0;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+.go-back-btn.ss a:hover {
+  color: #FFF;
+  background-color: var(--main-color);
 }

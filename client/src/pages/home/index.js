@@ -148,6 +148,10 @@ export default function Home() {
                         <span className="dtf">Free Shipping</span>
                         <span className="dts">Not AVailable</span>
                       </div>
+
+                      <div className="go-back-btn ss">
+                        <a href={`/product/${product._id}`}>View Product</a>
+                      </div>
                     </div>
                   </div>
                 ))}
